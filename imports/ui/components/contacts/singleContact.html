@@ -1,0 +1,19 @@
+<template name="singleContact">
+ 
+  <div class="col-12">
+    <button class="btn btn-block btn-sm btnOpen">
+      <div class="d-flex  person">
+        <div class="img_cont">
+          <img src="./img/{{profile.avatar}}" class="rounded-circle user_img" >
+          <span class="online_icon"></span>
+        </div>
+        <div class="user_info">
+            <span> __{{profile.first_name}}__{{profile.last_name}} {{userId}}</span>
+          <span></span>
+          <br />
+          <!-- <span>{{status.lastLogin.date}}</span> -->
+        </div>
+      </div>
+    </button>
+  </div>
+</template>

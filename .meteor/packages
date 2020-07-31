@@ -1,0 +1,115 @@
+# Meteor packages used by this project, one per line.
+# Check this file (and the other files in this directory) into your repository.
+#
+# 'meteor add' and 'meteor remove' will edit this file for you,
+# but you can also edit it by hand.
+
+meteor-base@1.4.0             # Packages every Meteor app needs to have
+mobile-experience@1.0.5       # Packages for a great mobile UX
+mongo@1.6.2                   # The database Meteor supports right now
+blaze-html-templates    # Compile .html files into Meteor Blaze views
+reactive-var@1.0.11            # Reactive variable for tracker
+tracker@1.2.0                 # Meteor's client-side reactive programming library
+
+standard-minifier-css@1.5.3   # CSS minifier run for production mode
+standard-minifier-js@2.4.1    # JS minifier run for production mode
+es5-shim@4.8.0                # ECMAScript 5 compatibility for older browsers
+ecmascript@0.12.4              # Enable ECMAScript2015+ syntax in app code
+shell-server@0.4.0            # Server-side component of the `meteor shell` command
+
+kadira:flow-router      # FlowRouter is a very simple router for Meteor
+kadira:blaze-layout     # Layout manager for blaze (works well with FlowRouter)
+less                    # Leaner CSS language
+
+meteortesting:mocha               # A package for writing and running your meteor app and package tests with mocha
+johanbrook:publication-collector  # Test a Meteor publication by collecting its output
+###################################
+
+accounts-base               #This package implements the basic functions necessary for user accounts and lets other packages register login services.
+accounts-password@1.5.1     #A login service that enables secure password-based login
+aldeed:autoform             #Easily create forms with automatic insert and update, and automatic reactive validation.
+aldeed:collection2          #A Meteor package that allows you to attach a schema to a Mongo.Collection.
+alanning:roles              #Authorization package for Meteor - compatible with built-in accounts package.
+alexwine:bootstrap-4        #The most popular front-end framework for developing responsive, mobile first projects on the web.
+
+    #barbatus:stars-rating      #Stars rating control with two modes: fixed and mutable.
+babrahams:constellation    
+
+ccorcos:subs-cache          #The goal is to cache subscriptions.
+check@1.3.1                 #Check whether a value matches a pattern
+cultofcoders:grapher        #relational query
+cultofcoders:persistent-session #Persistently store Session data on the client
+
+ddp-rate-limiter@1.0.7      #The DDPRateLimiter allows users to add rate limits to DDP methods and subscriptions.
+dynamic-import              #Runtime support for Meteor 1.5 dynamic import(...) syntax
+dbarrett:dropzonejs         #Dropzone.js - an open source library that provides drag'n'drop file uploads with image previews
+dschulz:jquery-qrcode       #jQuery.qrcode for Meteor
+dburles:collection-helpers
+
+easy:search                 #Easy-to-use search with Blaze Components (+ Elastic Search Support)
+easysearch:elasticsearch    #Elasticsearch Engine for EasySearch
+easysearch:autosuggest      #Selectize Autosuggest Component for EasySearch
+erasaur:meteor-lodash       #Wrapper for Lo-Dash v4.0.0
+
+fastclick                   #Faster touch events on mobile
+
+    #gwendall:auth-client-callbacks #Adds client-side onLogin and onLogout methods
+
+http                        #Make HTTP calls to remote servers
+
+jagi:astronomy              #The Astronomy package introduces the Model Layer into Meteor applications.
+jagi:astronomy-slug-behavior
+jalik:ufs                   #Base package for UploadFS
+jalik:ufs-local             #File system based store for UploadFS
+jalik:ufs-gridfs            #GridFS store for UploadFS
+jalik:i18n                  #Internationalization for Meteor apps
+jeffm:local-persist         #Persistent client (browser) collections for Meteor, using localStorage.
+juto:jessepollack-card      #A meteor wrapper for jessepollak.github.io/card credit card UI
+
+littledata:synced-cron      #A simple cron system for Meteor. It supports syncronizing jobs between multiple processes. 
+
+    #matb33:bootstrap-carousel  #Bootstrap 3.3.4: carousel
+    #markovchainz:slick         #updated slick packages
+
+manuel:reactivearray        #This package provides a wrapper around the Array class to make it reactive
+meteortoys:allthings        #Insanely Handy Development Tools
+mizzao:jquery-ui            #Simple lightweight pull-in for jQuery UI in Meteor
+mizzao:user-status          #Keeps track of user connection data, such as IP addresses, user agents, and client-side activity,  
+momentjs:moment             #Moment.js (official): parse, validate, manipulate, and display dates - official Meteor packaging
+mrt:twilio                  #Twilio API Wrapper for meteor
+msavin:sjobs                #The Simple Jobs Queue That Just Works
+
+navybits:roundsliderui      #A jQuery round slider based on http://roundsliderui.com/ packaged for Meteor 
+
+ostrio:files                #Upload files to Meteor application, with 3rd party storage support: AWS:S3, GridFS and other
+ostrio:flow-router-extra    #Carefully extended flow-router package.
+
+postrednik:meteor-rangeslider   #wrapper of Ion.RangeSlider jQuery slider
+
+random                      #Random number generator and utilities
+raix:handlebar-helpers      #Handlebar helpers
+    #reactive-dict               #Reactive dictionary
+reywood:publish-composite   #Publish a set of related documents from multiple collections with a reactive join
+richsilv:owl-carousel       #Touch enabled jQuery plugin that lets you create a beautiful responsive carousel slider.
+rwatts:uuid                 # UUID is a package created for adding a UUID (Universal Unique Identifier) on the fly.
+                            # The uuid.new() method is a 128-bit hash that returns a possibility of 340 undecillion combinations.
+
+fullcalendar:fullcalendar         #Full size calendar
+
+session@1.2.0               #Session variable
+spacebars@1.0.12            #Handlebars-like template language for Meteor
+sergeyt:typeahead           #Autocomplete package for meteor powered by twitter typeahead.js
+
+
+themeteorchef:bert          #A client side, multi-style alerts system for Meteor.
+    #themeteorchef:jquery-validation    #jQuery Validation by jzaefferer, repackaged for Meteor.
+tunguska:reactive-aggregate #Publish aggregations reactively
+
+underscore@1.0.10           #Collection of small helpers: _.map, _.each, ...
+
+    #zimme:active-route          #Active route helpers
+
+
+templating                  #Allows templates to be defined in .html files
+
+    #udondan:slick              #the last carousel you'll ever need

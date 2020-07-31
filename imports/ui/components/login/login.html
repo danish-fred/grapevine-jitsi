@@ -1,0 +1,68 @@
+<template name="login">
+    <div class="container-fluid">
+        <h3>Hi Please read</h3>
+        
+        <span>This project has no db connected. Instead we have a startup function creating 10 users -
+            which are listed below. Once logged in you may - if needed create more users.</span>
+        <div class="row">
+            <div class="col-4">
+                <div class="fill-30"></div>
+                <div class="example-users">
+                    <span>email - - - - password</span>
+                    <div class="fill-30"></div>
+                    <p>cristian@c.dk | 6019007</p>
+                    <p>clown@c.dk | 6019007</p>
+                    <p>maler@m.dk | 6019007</p>
+                    <p>thief@t.dk | 6019007</p>
+                    <p>shoute@s.dk | 6019007</p>
+                    <p>jimmy@j.dk | 6019007</p>
+                    <p>sara@s.dk | 6019007</p>
+                    <p>freddy@f.dk | 6019007</p>
+                    <p>daniel@d.dk | 6019007</p>
+                    <p>talk@t.dk | 6019007</p>
+                </div>
+            </div>
+            <div id="login-column" class="col-6">
+                <div class="box">
+                    <div class="shape1"></div>
+                    <div class="shape2"></div>
+                    <div class="shape3"></div>
+                    <div class="shape4"></div>
+                    <div class="shape5"></div>
+                    <div class="shape6"></div>
+                    <div class="shape7"></div>
+                    <div class="fill-70"></div>
+                    <div class="float">
+                        <div class="card card-login">
+                            <div class="card-header">
+                                <h3 class="card-title">Please sign in</h3>
+                            </div>
+                            <div class="card-body">
+                                <form class="login-form">
+                                    <div class="form-group">
+                                        <label>Email address</label>
+                                        <input type="email" class="form-control" id="email" name="email"
+                                            placeholder="Email">
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Password</label>
+                                        <input type="password" class="form-control" id="password" name="password"
+                                            placeholder="Password">
+                                    </div>
+                                    <button type="submit" class="btn btn-primary">Login</button>
+                                    <a href="/register" class="register-link">Create An Account</a>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="login-row" class="row justify-content-center align-items-center">
+
+        </div>
+        <!-- <br/> -->
+
+    </div>
+
+</template>

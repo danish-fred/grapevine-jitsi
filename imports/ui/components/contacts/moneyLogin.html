@@ -1,0 +1,26 @@
+<template name="moneyLogin">
+    
+  <div class="container-fluid">
+    <p>Personal Funds</p>
+    <div class="row">
+      <div class="col-3">
+        <button class="btn btn-lg btn-outline-primary btn-block btnWelcome" data-target="fundsWelcome">
+          <i class="fas fa-sign-in-alt fa-2x"></i> Welcome</button>
+        <button class="btn btn-lg btn-outline-primary btn-block btnBalance" data-target="balance">
+          <i class="fas fa-balance-scale fa-2x"></i> Balance</button>
+        <button class="btn btn-lg btn-outline-primary btn-block btnActivities" data-target="activities">
+          <i class="fas fa-cash-register fa-2x"></i> Activities</button>
+        <!-- <button class="btn btn-lg btn-outline-primary btn-block btnDeposite" data-target="deposite"><i
+            class="far fa-user fa-3x"></i> Deposite</button>
+        <button class="btn btn-lg btn-outline-primary btn-block btnNewCard" data-target="newCard"><i
+            class="fas fa-users fa-3x"></i> New Card</button> -->
+        <button class="btn btn-lg btn-outline-primary btn-block btnTransfere" data-target="transfere">
+          <i class="fas fa-exchange-alt fa-2x"></i>Transfere</button>
+      </div>
+      <div class="col-9">
+        {{> Template.dynamic template=itemFunds }}
+      </div>
+    </div>
+  </div>
+
+</template>

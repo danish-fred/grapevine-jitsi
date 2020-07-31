@@ -1,0 +1,24 @@
+<template name="business">
+  <div class="container-fluid">
+    <div class="row">
+      {{> Template.dynamic template=top}}
+    </div>
+    <div class="row">
+      <!-- <div class="col-md-3">
+        <div class="container-fluid">
+           {{> Template.dynamic template=left}}
+        </div>
+      </div> -->
+      <div class="col-md-11">
+          <div class="container-fluid">
+           {{> Template.dynamic template=main}}
+          </div>
+      </div>
+      <div class="col-lg-1">
+          <div class="container">
+             {{> Template.dynamic template=right}}
+          </div>
+        </div>
+    </div>
+  </div>
+</template>

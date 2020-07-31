@@ -1,0 +1,79 @@
+<template name="chatHead">
+
+  <div class="container-fluid">
+    
+      <div class="person">
+        {{#each member}}
+        <div class="row">
+          <div class="col-2">
+            <div class="img_cont">
+              <img src="./img/{{profile.avatar}}" class="user_150">
+              <span class="online_icon offline"></span>
+            </div>
+          </div>
+          <div class="col-3 user_info">
+            <span>{{_id}}</span>
+            <br />
+            <span>{{profile.first_name}}</span>
+            <br>
+            <span>{{profile.last_name}}</span>
+            <div class="fill-70"></div>
+          </div>
+          <div class="col-2">
+            <button class="btn btn-outline-primary btn-lg btn-block btnVideo" data-target="">
+              my Wall
+            </button>
+          </div>
+          <div class="col-1">
+            <button class="btn btn-outline-primary btn-lg btn-block btnVideo" data-target="videoChat">
+              <i class="fas fa-video" aria-hidden="true"></i>
+            </button>
+          </div>
+          <div class="col-1">
+            <button class="btn btn-outline-primary btn-lg btn-block btnPhone" data-target="phone">
+              <i class="fas fa-phone " aria-hidden="true"></i>
+            </button>
+          </div>
+          <div class="col-1">
+            <button class="btn btn-outline-primary btn-lg btn-block btnChat" data-target="chatPage">
+              <i class="fas fa-comments "></i>
+            </button>
+          </div>
+          <div class="col-1">
+            <button type="button" class="btn btn-block btn-outline-dark btnClose">
+              <i class="fas fa-window-close"></i>
+            </button>
+          </div>
+        </div>
+        {{/each}}
+      </div>
+      <br />
+
+      <div class="">
+        <div class="row commun">
+          {{> Template.dynamic template=useContacts }}
+
+          
+        
+
+        <div class="">This is the communication area. In here you have choosen the One friend to communicate with.
+          We can go to the friends wall - we can have text chat and so on. The one button that is interesting
+          is the video button. Clicking this will - in order:
+          <br> 1. send an invitation to this friend (chatHead.js)
+          <br>2. set a session so we can use the 'friendslist' button to invite friends to conference without changing
+          communication area
+          ( Now friendslist will not work as a list but as inviter)
+          <br>3: open Jitsi.meet
+          <br>click the black (close) button will reset the overlay as well as the session
+          <br> The idea is that all the invitation and initiation is done from this area!
+          <h5>Now please click the video button</h5>
+          <br>
+          And now to the "Launch deme modal" button
+        </div>
+      </div>
+
+      </div>
+
+  </div>
+
+</template>

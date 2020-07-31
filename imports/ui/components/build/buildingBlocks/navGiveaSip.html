@@ -1,0 +1,19 @@
+<template name = "navGiveaSip">
+
+  <button class="btn btn-light ml-2  my-2 my-sm-0" data-toggle="modal" data-target="#giveasip">Give a Sip of your wine</button>
+
+<!-- Modal "Give a Sip" -->
+<div class="modal fade" id="giveasip" tabindex="-1" role="dialog" data-backdrop="false" style="background-color: rgba(0, 0, 0, 0.6);" aria-labelledby="exampleModalLabel" aria-hidden="true"><!--data-backdrop="false" -->
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+          {{> modalHeader}}
+      </div>
+      <div class="modal-body">
+        {{> modalSipBody}}
+      </div>
+    </div>
+  </div>
+</div>
+
+</template>

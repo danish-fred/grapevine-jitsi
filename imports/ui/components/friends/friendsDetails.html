@@ -1,0 +1,105 @@
+<template name="friendsDetails">
+    <!-- <div class="fill-200"></div> -->
+    <h1>Details</h1>
+
+    <!-- <div class="container-fluid">
+        {{# each friendDetails}}
+            <div class="row">
+                <div class="col-4">
+                    <img src="./img/{{profile.avatar}}" style="height: 200px; width: 200px;">
+                </div>
+                <div class="col-8">
+                 <p>ID:  {{_id}}</p>   
+                 <h5>{{profile.first_name}} {{profile.last_name}}</h5>
+                </div>
+            </div>
+            <div class="fill-100"></div>
+            <div class="row">
+                <ul class="nav nav-pills nav-fill">
+                    <li class="active"><a data-toggle="tab" href="#home"><h5>Video</h5></a></li>
+                    <li><a data-toggle="tab" href="#menu1">Voice</a></li>
+                    <br/>
+                    <li><a data-toggle="tab" href="#menu2">Text-chat</a></li>
+                </ul>
+            </div>
+            <br/>
+            <div class="row">
+                <br/>
+                <div class="tab-content">
+                    <div id="home" class="tab-pane fade in active">
+                      <h3>Video</h3>
+                      {{> videoTemplate}}
+                    </div>
+                    <div id="menu1" class="tab-pane fade">
+                      <h3>Voice</h3>
+                      {{> voiceTemplate}}
+                    </div>
+                    <div id="menu2" class="tab-pane fade">
+                      <h3>Text</h3>
+                    {{> textTemplate}}
+                    </div>
+                </div>
+            </div>
+        {{/each}}
+          
+    </div>
+    <br /> -->
+    <div class="container-fluid">
+        <div class="">
+          <div class="">
+            {{#each friendsDetails}}
+            <div class="person">
+                <div class="row">
+                  <div class="col-2">
+                    <div class="img_cont">
+                      <img src="./img/{{profile.avatar}}" class="user_150">
+                      <span class="online_icon offline"></span>
+                    </div>
+                  </div>
+                  <div class="col-4 user_info">
+                    <span>{{_id}}</span>
+                    <span>{{profile.first_name}}</span>
+                    <br>
+                    <span>{{profile.last_name}}</span>
+                    <br>
+                     <!-- <div id="meet">
+                      meeting
+                  </div> -->
+                   <div class="fill-100"></div>
+                  </div>
+                 
+                  <div class="col-1">
+                    <button class="btn btn-outline-primary btn-lg btn-block btnVideo" data-target="videoChat">
+                      <i class="fas fa-video" aria-hidden="true"></i>
+                    </button>
+                  </div>
+                  <div class="col-1">
+                    <button class="btn btn-outline-primary btn-lg btn-block btnPhone" data-target="phone">
+                      <i class="fas fa-phone " aria-hidden="true"></i>
+                    </button>
+                  </div>
+                  
+                  <div class="col-1">
+                    <button class="btn btn-outline-primary btn-lg btn-block btnChat" data-target="chatPage">
+                      <i class="fas fa-comments "></i>
+                    </button>
+                  </div>
+<!--                  
+                  <div class="col-1">
+                    <button type="button" class="btn btn-block btn-outline-dark btnClose">
+                      <i class="far fa-window-close">Close</i>
+                    </button>
+                  </div> -->
+                </div>
+            </div>
+            {{/each}}
+          </div>
+         
+        </div>
+        <!--<br />
+         <div class="fill-100"></div> -->
+        <div class="row">
+          {{> Template.dynamic template=useContacts }}
+        </div>
+      </div>
+</template>

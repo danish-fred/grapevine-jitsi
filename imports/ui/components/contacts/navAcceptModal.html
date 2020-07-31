@@ -1,0 +1,76 @@
+<template name="navAcceptModal">
+
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#openModal"> Accept modal </button>
+
+    <!-- openModal -->
+    <div class="modal fade" id="openModal" tabindex="-1" role="dialog" data-backdrop="false" 
+    style="background-color: rgba(0, 0, 0, 0.8);"  aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="text">
+                    this modal is situated in contacts/navAcceptModal ( ref: from navbarBazar)
+                    <br> the meaning of this modal is to accept an invitation or not.
+                    <br> when you clicked the btnVideo or the friendslist buttons in the communication area
+                    you inserted an invitation in the VideoCalls collection
+                    <br> <b>this is for you to do: </b>if we "observe" that collection for changes, we can find new invitations, and with a 
+                    callback make this modal "automatic" - meaning that we will not need to click the "Accept modal"
+                    button to see this. This modal will shown up every time a new invitation is made to this id.
+                    <br>Now from the VideoCalls collection we know who has invited us, and using this id in the roomName call,
+                    will get us in the conversation 
+                    <br>
+                    <br>
+                    </div>
+                    <br>
+                    
+                </div>
+                <div class="modal-body">
+                    the content of this modal is: the avatar and name of the person who invited you( from collection VideoCalls)
+                    <div class="img">
+                    <img src="./img/{{profile.avatar}}" class="rounded-circle user_img" style="height: 108px" >
+                    </div>
+                    <span>
+                        <h1>{{profile.name}}profileName</h1>
+                    </span>
+                </div>
+                <div class="modal-footer">
+                    then of course we have accept or decline buttons
+                    <div class="float-left">
+                        <button type="button" class="btn " data-dismiss="modal"><img src="./img/red-cross.png"
+                                style="height: 108px"></button>
+                    </div>
+                    <button type="button" class="btn float-right btnGreen">
+                        <img src="./img/green-hack1.png" style="height: 108px" data-toggle="modal"
+                            data-target="#jitsiModal" data-dismiss="modal">
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--end openModal -->
+
+    <!-- jitsiModal -->
+    <div class="modal fade" id="jitsiModal" tabindex="-1" data-backdrop="false" 
+    style="background-color: rgba(0, 0, 0, 0.8);"  role="dialog"
+        aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    If every thing has gone right, we skould have the result here: one to one - or - group conversations.
+                    <br>  only thing left is to "clear up" the jitsi screen, for all the buttons and what ever is interfere, 
+                    and maybe set a timer function - so we at end of call can update the collection with duration of conversation
+                </div> 
+                <div class="modal-body">
+                    <div id="calling"></div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--end jitsiModal -->
+
+</template>
