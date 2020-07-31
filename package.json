@@ -12,7 +12,7 @@
     "geocomplete": "^1.7.0",
     "meteor-node-stubs": "^0.4.1",
     "round-slider": "^1.4.0",
-    "simpl-schema": "^1.5.5",
+    "simpl-schema": "^1.9.0",
     "tempusdominus-bootstrap-4": "^5.1.2"
   },
   "devDependencies": {
